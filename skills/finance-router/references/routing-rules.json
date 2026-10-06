@@ -1,0 +1,244 @@
+{
+  "version": "0.2.0",
+  "principle": "Choose the smallest sufficient set. Native skill discovery uses each SKILL.md name and description; finance-router coordinates only broad or composite requests.",
+  "routes": [
+    {
+      "id": "dcf",
+      "intents": [
+        "dcf",
+        "discounted cash flow",
+        "intrinsic value"
+      ],
+      "primary": "dcf-model",
+      "support": [
+        "three-statement-model",
+        "comps-analysis"
+      ]
+    },
+    {
+      "id": "comps",
+      "intents": [
+        "trading comps",
+        "comparable companies",
+        "peer valuation"
+      ],
+      "primary": "comps-analysis",
+      "support": [
+        "competitive-analysis",
+        "company-one-pager"
+      ]
+    },
+    {
+      "id": "lbo",
+      "intents": [
+        "lbo",
+        "leveraged buyout",
+        "sponsor returns"
+      ],
+      "primary": "lbo-model",
+      "support": [
+        "returns-analysis",
+        "deal-screening"
+      ]
+    },
+    {
+      "id": "earnings-post",
+      "intents": [
+        "earnings analysis",
+        "post earnings",
+        "quarter results",
+        "beat miss"
+      ],
+      "primary": "earnings-analysis",
+      "support": [
+        "model-update",
+        "thesis-tracker",
+        "catalyst-calendar"
+      ]
+    },
+    {
+      "id": "earnings-pre",
+      "intents": [
+        "earnings preview",
+        "before earnings",
+        "quarter preview"
+      ],
+      "primary": "earnings-preview",
+      "support": [
+        "catalyst-calendar",
+        "thesis-tracker"
+      ]
+    },
+    {
+      "id": "morning-note",
+      "intents": [
+        "morning note",
+        "market briefing",
+        "overnight market"
+      ],
+      "primary": "morning-note",
+      "support": [
+        "catalyst-calendar"
+      ]
+    },
+    {
+      "id": "initiation",
+      "intents": [
+        "initiating coverage",
+        "full stock analysis",
+        "initiation report"
+      ],
+      "primary": "initiating-coverage",
+      "support": [
+        "sector-overview",
+        "competitive-analysis",
+        "comps-analysis",
+        "dcf-model"
+      ]
+    },
+    {
+      "id": "thesis",
+      "intents": [
+        "investment thesis",
+        "update thesis",
+        "thesis tracker"
+      ],
+      "primary": "thesis-tracker",
+      "support": [
+        "earnings-analysis",
+        "catalyst-calendar"
+      ]
+    },
+    {
+      "id": "ma",
+      "intents": [
+        "merger model",
+        "accretion dilution",
+        "m&a model"
+      ],
+      "primary": "merger-model",
+      "support": [
+        "comps-analysis",
+        "three-statement-model"
+      ]
+    },
+    {
+      "id": "pitch",
+      "intents": [
+        "pitch deck",
+        "banking pitch",
+        "pitchbook"
+      ],
+      "primary": "pitch-deck",
+      "support": [
+        "company-one-pager",
+        "comps-analysis",
+        "deck-qc"
+      ]
+    },
+    {
+      "id": "cim",
+      "intents": [
+        "cim",
+        "confidential information memorandum"
+      ],
+      "primary": "cim-builder",
+      "support": [
+        "company-one-pager",
+        "competitive-analysis",
+        "datapack-builder"
+      ]
+    },
+    {
+      "id": "buyer-list",
+      "intents": [
+        "buyer list",
+        "potential acquirers",
+        "strategic buyers",
+        "financial sponsors"
+      ],
+      "primary": "buyer-list",
+      "support": [
+        "company-one-pager",
+        "competitive-analysis"
+      ]
+    },
+    {
+      "id": "pe-screen",
+      "intents": [
+        "deal screening",
+        "screen this deal",
+        "screen this company for private equity"
+      ],
+      "primary": "deal-screening",
+      "support": [
+        "lbo-model",
+        "dd-checklist"
+      ]
+    },
+    {
+      "id": "ic",
+      "intents": [
+        "ic memo",
+        "investment committee memo"
+      ],
+      "primary": "ic-memo",
+      "support": [
+        "lbo-model",
+        "returns-analysis",
+        "dd-checklist"
+      ]
+    },
+    {
+      "id": "portfolio-monitoring",
+      "intents": [
+        "portfolio company review",
+        "portfolio monitoring"
+      ],
+      "primary": "portfolio-monitoring",
+      "support": [
+        "variance-commentary",
+        "value-creation-plan"
+      ]
+    },
+    {
+      "id": "fund-close",
+      "intents": [
+        "nav tie out",
+        "fund close",
+        "fund reconciliation"
+      ],
+      "primary": "nav-tie-out",
+      "support": [
+        "gl-reconciliation",
+        "roll-forward",
+        "statement-audit"
+      ]
+    },
+    {
+      "id": "kyc",
+      "intents": [
+        "kyc documents",
+        "onboarding documents",
+        "kyc review"
+      ],
+      "primary": "kyc-document-review",
+      "support": [
+        "kyc-rules-grid"
+      ]
+    },
+    {
+      "id": "advisor-review",
+      "intents": [
+        "client review",
+        "advisor meeting",
+        "portfolio review"
+      ],
+      "primary": "client-review",
+      "support": [
+        "advisor-meeting-prep",
+        "rebalance-review"
+      ]
+    }
+  ]
+}

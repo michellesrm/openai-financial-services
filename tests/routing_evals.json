@@ -1,0 +1,110 @@
+{
+  "version": "0.2.0",
+  "cases": [
+    {
+      "prompt": "Build a DCF for NVIDIA with bear, base and bull cases.",
+      "expected_primary": "dcf-model"
+    },
+    {
+      "prompt": "Compare this company against public peers and tell me where it should trade.",
+      "expected_primary": "comps-analysis"
+    },
+    {
+      "prompt": "Build an LBO and show MOIC and IRR sensitivities.",
+      "expected_primary": "lbo-model"
+    },
+    {
+      "prompt": "JPM just reported earnings. What changed versus consensus and does it change the thesis?",
+      "expected_primary": "earnings-analysis",
+      "expected_support": [
+        "model-update",
+        "thesis-tracker"
+      ]
+    },
+    {
+      "prompt": "Prepare a preview for MSFT earnings next week and tell me the KPIs that will move the stock.",
+      "expected_primary": "earnings-preview"
+    },
+    {
+      "prompt": "Give me an institutional morning market briefing and tomorrow's catalyst calendar.",
+      "expected_primary": "morning-note",
+      "expected_support": [
+        "catalyst-calendar"
+      ]
+    },
+    {
+      "prompt": "Write an initiation-style stock analysis including sector structure, competition and valuation.",
+      "expected_primary": "initiating-coverage",
+      "expected_support": [
+        "sector-overview",
+        "competitive-analysis"
+      ]
+    },
+    {
+      "prompt": "Update my investment thesis after this quarter's new information.",
+      "expected_primary": "thesis-tracker"
+    },
+    {
+      "prompt": "Build an accretion dilution model for this acquisition.",
+      "expected_primary": "merger-model"
+    },
+    {
+      "prompt": "Prepare an M&A pitch deck and QC all valuation pages.",
+      "expected_primary": "pitch-deck",
+      "expected_support": [
+        "deck-qc"
+      ]
+    },
+    {
+      "prompt": "Draft a confidential information memorandum from these diligence materials.",
+      "expected_primary": "cim-builder"
+    },
+    {
+      "prompt": "Create a prioritized buyer list for this sell-side process.",
+      "expected_primary": "buyer-list"
+    },
+    {
+      "prompt": "Screen this company as a private equity investment and tell me whether to pursue it.",
+      "expected_primary": "deal-screening"
+    },
+    {
+      "prompt": "Turn our diligence and LBO work into an investment committee memo.",
+      "expected_primary": "ic-memo"
+    },
+    {
+      "prompt": "Review this portfolio company versus budget and update the value creation priorities.",
+      "expected_primary": "portfolio-monitoring",
+      "expected_support": [
+        "value-creation-plan"
+      ]
+    },
+    {
+      "prompt": "Tie the fund NAV to the GL and investigate any breaks.",
+      "expected_primary": "nav-tie-out",
+      "expected_support": [
+        "gl-reconciliation"
+      ]
+    },
+    {
+      "prompt": "Review these KYC onboarding documents for completeness and inconsistencies.",
+      "expected_primary": "kyc-document-review"
+    },
+    {
+      "prompt": "Prepare my client's quarterly portfolio review for an advisor meeting.",
+      "expected_primary": "client-review",
+      "expected_support": [
+        "advisor-meeting-prep"
+      ]
+    },
+    {
+      "prompt": "Explain what EBITDA means.",
+      "expected_primary": null,
+      "negative": true
+    },
+    {
+      "prompt": "Write a birthday message for my friend who works at a bank.",
+      "expected_primary": null,
+      "negative": true
+    }
+  ]
+}

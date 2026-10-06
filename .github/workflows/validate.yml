@@ -1,0 +1,23 @@
+name: validate-plugin
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manifests and skills
+        run: python scripts/validate_plugin.py
+      - name: Validate routing registry and eval fixtures
+        run: python scripts/test_routing.py
+      - name: Build distributable ZIP
+        run: python scripts/package_plugin.py
+      - name: Inspect ZIP
+        run: unzip -l dist/financial-services-workflows.zip | head -100
