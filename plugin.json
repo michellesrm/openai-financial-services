@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "financial-services-workflows",
+  "version": "0.1.0",
+  "description": "Institutional-style financial analysis workflows for modeling, investment banking, equity research, private equity, fund administration, operations, and advisor support. Skills-first and portable across ChatGPT, Codex, and OpenAI agent environments.",
+  "license": "Apache-2.0",
+  "keywords": ["finance","investment-banking","equity-research","private-equity","valuation","modeling","fund-administration"],
+  "extensions": {"com.openai":{"interface":{
+    "displayName":"Financial Services",
+    "shortDescription":"Institutional finance workflows",
+    "longDescription":"Reusable institutional-style finance skills for valuation, financial modeling, investment banking, equity research, private equity, fund administration, KYC review, and advisor-support workflows. Outputs are analyst work product for human review; the plugin does not execute trades, approve transactions, or replace licensed legal, tax, accounting, compliance, or investment professionals.",
+    "developerName":"Local Developer",
+    "category":"Productivity",
+    "capabilities":["Financial analysis","Valuation modeling","Investment research","Deal analysis","Model quality control","Fund operations review"],
+    "defaultPrompt":["Use Financial Services to build a DCF with bear, base, and bull cases.","Use Financial Services to analyze the latest earnings and update the investment thesis.","Use Financial Services to review this financial model for formula and balance-sheet errors."],
+    "brandColor":"#111827","composerIcon":"./assets/icon.svg","logo":"./assets/icon.svg"
+  }}}
+}
